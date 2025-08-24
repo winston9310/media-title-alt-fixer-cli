@@ -44,15 +44,15 @@ Run the command inside your WordPress installation:
 
 ### Dry run (default)
 Preview what would be changed without saving:
-bash
+ ```
 wp media-fixer fix --update-alt --search-parent
-
+ ```
 ##Execute changes
 
 Apply the updates:
-
+ ```
 wp media-fixer fix --execute --update-alt --search-parent
-
+ ```
 ##Options
 
 --execute
@@ -111,19 +111,19 @@ If an attachment’s title or ALT matches any of these patterns, it will be repl
 ## Examples
 
 Dry run to see what will change:
-
+ ```
 wp media-fixer fix --update-alt --search-parent
-
+ ```
 
 Execute changes for all attachments:
-
+ ```
 wp media-fixer fix --execute --update-alt --search-parent
-
+ ```
 
 Restrict to JPEG and PNG images uploaded in 2025:
-
+ ```
 wp media-fixer fix --execute --update-alt --mime-include=image/jpeg,image/png --uploaded-after=2025-01-01
-
+ ```
 License
 
 MIT License.
